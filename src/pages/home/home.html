@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Holis
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let song of songs">
+      <img src={{song.image_small}}>
+      <p>{{song.title}} </p>
+    </ion-item>
+  </ion-list>  
+</ion-content>
